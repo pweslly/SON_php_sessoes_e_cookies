@@ -1,2 +1,6 @@
 <?php
-  setcookie('meunome', 'Erik', time() + (3600 * 24 * 360 * 99));
+session_save_path(__DIR__.'/sessions');
+
+session_start();
+
+$_SESSION['meunome'] = 'erik';
