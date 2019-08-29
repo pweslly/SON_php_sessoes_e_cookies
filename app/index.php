@@ -2,6 +2,7 @@
 
 session_start();
 
+$_SESSION['usuario'] = 'Pablo';
 /*
 $_SESSION['usuario'] = [
   'name' => 'Erik',
@@ -11,4 +12,4 @@ $_SESSION['usuario'] = [
 ]; */
 
 // Como deletar uma sessão
-unset($_SESSION['usuario']);
+//unset($_SESSION['usuario']);
