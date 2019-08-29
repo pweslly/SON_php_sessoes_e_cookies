@@ -3,6 +3,8 @@
 session_start();
 
 $_SESSION['usuario'] = 'Pablo';
+$_SESSION['ultimo-acesso'] = '19-2-2922';
+$_SESSION['id-user'] = 10;
 /*
 $_SESSION['usuario'] = [
   'name' => 'Erik',

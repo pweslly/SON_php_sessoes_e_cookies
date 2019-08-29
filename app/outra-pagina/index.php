@@ -3,4 +3,4 @@
 session_start();
 
   // Lendo um cookie
-  var_dump($_SESSION['usuario']);
+  var_dump($_SESSION);
