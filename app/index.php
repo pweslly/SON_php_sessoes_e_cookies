@@ -2,7 +2,7 @@
 
 session_start();
 
-$user = empty($_SESSION['users']) ?? null;
+$user = $_SESSION['user'] ?? null;
 
 if(!$user){
   header('location: login.php');
@@ -11,3 +11,4 @@ if(!$user){
 ?>
 
 <h1> Página Protegida </h1>
+<p> Olá, <?php echo $user['email']; ?></p>

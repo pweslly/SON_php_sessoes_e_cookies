@@ -1,6 +1,15 @@
 <?php
-
 session_start();
+if ($_SERVER['REQUEST_METHOD'] == 'POST')
+{
+    $_SESSION['user'] =[
+      'email' => filter_input(INPUT_POST,'email')
+    ];
+    
+    header('location: index.php');
+    exit;
+}
+
 
 ?>
   
@@ -21,10 +30,10 @@ session_start();
   <center><h1> Login </h1></center>
   <div class="row justify-content-md-center">
     <div class="col-4">
-      <form>
+      <form action="" method="post">
           <div class="form-group">
               <label for="email">E-mail</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-mail">
+              <input type="text" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-mail">
               <smal id="emailHelp" class="form-text text-muted"> Informe seu e-mail </small>
           </div>
           <button type="submit" class="btn btn-primary">Entrar</button>
