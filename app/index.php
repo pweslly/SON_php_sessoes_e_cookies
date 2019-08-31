@@ -12,3 +12,4 @@ if(!$user){
 
 <h1> Página Protegida </h1>
 <p> Olá, <?php echo $user['email']; ?></p>
+<p> Deslogar Session <a href="/logout.php">Clique aqui </a>
