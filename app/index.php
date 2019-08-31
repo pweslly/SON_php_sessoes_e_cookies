@@ -2,8 +2,6 @@
 
 require __DIR__.'/session.php';
 
-
-
 $user = $_SESSION['user'] ?? null;
 
 if(!$user){

@@ -2,7 +2,6 @@
 
 require __DIR__.'/session.php';
 
-session_start();
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
     $_SESSION['user'] =[
