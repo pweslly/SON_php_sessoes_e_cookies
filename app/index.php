@@ -1,6 +1,8 @@
 <?php
 
-session_start();
+require __DIR__.'/session.php';
+
+
 
 $user = $_SESSION['user'] ?? null;
 
